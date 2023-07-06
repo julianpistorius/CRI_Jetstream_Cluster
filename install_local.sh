@@ -76,6 +76,7 @@ dnf -y --allowerasing install \
 
 pip3 install openstacksdk==0.61.0
 pip3 install python-openstackclient==5.8.0
+sudo ln -sf /usr/local/bin/openstack /usr/bin/openstack
 
 #create user that can be used to submit jobs
 [ ! -d /home/gateway-user ] && useradd -m gateway-user
